@@ -29,15 +29,11 @@
       background: #1a0000;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
     }
 
     .page {
       width: 100%;
       max-width: 480px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
       position: relative;
     }
 
@@ -46,9 +42,11 @@
       display: block;
     }
 
-    .btn-wrap {
-      padding: 0 20px 32px;
-      background: #1a0000;
+    .btn-overlay {
+      position: absolute;
+      bottom: 7%;
+      left: 5%;
+      right: 5%;
     }
 
     .btn {
@@ -63,21 +61,15 @@
       text-decoration: none;
       padding: 18px 20px;
       border-radius: 14px;
-      box-shadow: 0 6px 28px rgba(232,93,42,.5);
-      transition: transform .15s, box-shadow .15s;
+      box-shadow: 0 6px 28px rgba(232,93,42,.6);
       letter-spacing: .3px;
-    }
-
-    .btn:active {
-      transform: scale(.97);
-      box-shadow: 0 3px 14px rgba(232,93,42,.4);
     }
 
     .btn span {
       display: block;
-      font-size: .85rem;
+      font-size: .82rem;
       font-weight: 500;
-      opacity: .85;
+      opacity: .9;
       margin-top: 3px;
     }
   </style>
@@ -85,10 +77,10 @@
 <body>
   <div class="page">
     <img src="images/banner.png" alt="Іменний конкурс з Олександрою Тарнавською" class="banner" />
-    <div class="btn-wrap">
+    <div class="btn-overlay">
       <a href="https://t.me/manager_2bk_bot" class="btn" onclick="fbq('track','Lead')">
-        Написати в Telegram
-        <span>та забронювати місце за найнижчою ціною</span>
+        Пишіть нам у Telegram
+        <span>та бронюйте партнерство за найнижчою ціною вже зараз</span>
       </a>
     </div>
   </div>
