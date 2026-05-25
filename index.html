@@ -2,10 +2,10 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2BK Promotion — Спонсорські місця в конкурсах</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>2BK Promotion — Іменний конкурс</title>
 
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,583 +13,84 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '4534069216912174');
-    fbq('track', 'PageView');
+    fbq('init','4534069216912174');
+    fbq('track','PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=4534069216912174&ev=PageView&noscript=1"
-  /></noscript>
+    src="https://www.facebook.com/tr?id=4534069216912174&ev=PageView&noscript=1"/></noscript>
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    :root {
-      --bg: #0A0E1A;
-      --bg2: #111827;
-      --gold: #C9A84C;
-      --gold-light: #e0bc68;
-      --text: #E8E8E8;
-      --text-muted: #8a9ab5;
-      --radius: 14px;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    /* NAV */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 24px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    .logo { font-size: 1.4rem; font-weight: 800; color: #fff; }
-    .logo span { color: var(--gold); }
-    .nav-badge {
-      font-size: .75rem;
-      background: rgba(201,168,76,.15);
-      color: var(--gold);
-      border: 1px solid rgba(201,168,76,.3);
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-weight: 600;
-    }
-
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 60px 24px 52px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    .hero-tag {
-      display: inline-block;
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      background: rgba(201,168,76,.1);
-      border: 1px solid rgba(201,168,76,.25);
-      padding: 5px 14px;
-      border-radius: 20px;
-      margin-bottom: 22px;
-    }
-    h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 800;
-      line-height: 1.18;
-      margin-bottom: 20px;
-      letter-spacing: -.5px;
-    }
-    h1 .accent { color: var(--gold); }
-    .hero-sub {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 540px;
-      margin: 0 auto 36px;
-    }
-
-    /* BUTTONS */
-    .btn-primary {
-      display: inline-block;
-      background: var(--gold);
-      color: #0A0E1A;
-      font-weight: 800;
-      font-size: 1.05rem;
-      padding: 16px 36px;
-      border-radius: 50px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background .2s, box-shadow .2s, transform .15s;
-      box-shadow: 0 4px 24px rgba(201,168,76,.35);
-    }
-    .btn-primary:hover {
-      background: var(--gold-light);
-      box-shadow: 0 6px 32px rgba(201,168,76,.55);
-      transform: translateY(-2px);
-    }
-    .btn-ghost {
-      display: inline-block;
-      color: var(--gold);
-      font-weight: 600;
-      font-size: .95rem;
-      padding: 12px 28px;
-      border-radius: 50px;
-      text-decoration: none;
-      border: 1.5px solid rgba(201,168,76,.4);
-      margin-top: 14px;
-      transition: border-color .2s, background .2s;
-    }
-    .btn-ghost:hover { border-color: var(--gold); background: rgba(201,168,76,.07); }
-    .cta-group { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-
-    /* PROOF BAR */
-    .proof-bar {
+    html, body {
+      height: 100%;
+      background: #1a0000;
       display: flex;
       justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      padding: 28px 24px;
-      border-top: 1px solid rgba(255,255,255,.06);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      max-width: 760px;
-      margin: 0 auto 64px;
-    }
-    .proof-item { text-align: center; }
-    .proof-num { display: block; font-size: 1.7rem; font-weight: 800; color: var(--gold); line-height: 1; }
-    .proof-label { font-size: .8rem; color: var(--text-muted); margin-top: 4px; }
-
-    /* SECTION */
-    .section { max-width: 960px; margin: 0 auto; padding: 0 24px 72px; }
-    .section-title {
-      text-align: center;
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin-bottom: 36px;
-      letter-spacing: -.3px;
-    }
-    .section-title span { color: var(--gold); }
-
-    /* BLOGGER BLOCK */
-    .blogger-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      align-items: center;
-    }
-    .blogger-img {
-      border-radius: var(--radius);
-      width: 100%;
-      object-fit: cover;
-      max-height: 500px;
-    }
-    .blogger-info { padding: 16px 0; }
-    .blogger-info h3 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-      line-height: 1.25;
-    }
-    .blogger-info h3 span { color: var(--gold); }
-    .blogger-stats {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    .bstat {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: var(--bg2);
-      border: 1px solid rgba(255,255,255,.07);
-      border-radius: 10px;
-      padding: 12px 16px;
-    }
-    .bstat-num { font-size: 1.2rem; font-weight: 800; color: var(--gold); min-width: 80px; }
-    .bstat-label { font-size: .88rem; color: var(--text-muted); }
-
-    /* RESULTS GRID */
-    .results-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-    .result-img {
-      width: 100%;
-      border-radius: var(--radius);
-      object-fit: cover;
-      border: 1px solid rgba(255,255,255,.07);
-    }
-
-    /* BENEFITS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: var(--bg2);
-      border: 1px solid rgba(255,255,255,.07);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      transition: border-color .2s, transform .2s;
-    }
-    .card:hover { border-color: rgba(201,168,76,.3); transform: translateY(-3px); }
-    .card-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
-    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
-    .card p { font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
-
-    /* REVIEWS */
-    .reviews-wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-    .review-img {
-      width: 100%;
-      border-radius: var(--radius);
-      object-fit: cover;
-      border: 1px solid rgba(255,255,255,.07);
-    }
-    .review-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .review-card {
-      background: var(--bg2);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius);
-      padding: 20px;
-    }
-    .review-card blockquote {
-      font-size: .9rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-    .review-result {
-      display: inline-block;
-      font-size: .82rem;
-      font-weight: 700;
-      color: var(--gold);
-      background: rgba(201,168,76,.1);
-      border: 1px solid rgba(201,168,76,.25);
-      padding: 3px 10px;
-      border-radius: 20px;
-    }
-
-    /* STEPS */
-    .steps { display: flex; flex-direction: column; gap: 14px; max-width: 640px; margin: 0 auto; }
-    .step {
-      display: flex;
       align-items: flex-start;
-      gap: 18px;
-      background: var(--bg2);
-      border: 1px solid rgba(255,255,255,.07);
-      border-radius: var(--radius);
-      padding: 22px 24px;
     }
-    .step-num {
-      min-width: 40px; height: 40px;
-      border-radius: 50%;
-      background: rgba(201,168,76,.15);
-      border: 1.5px solid rgba(201,168,76,.4);
-      color: var(--gold);
-      font-weight: 800;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .step-text h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
-    .step-text p { font-size: .88rem; color: var(--text-muted); }
 
-    /* QUALITY BANNER */
-    .quality-banner {
-      position: relative;
-      border-radius: var(--radius);
-      overflow: hidden;
-      margin-bottom: 72px;
-    }
-    .quality-banner img { width: 100%; max-height: 480px; object-fit: cover; display: block; filter: brightness(.7); }
-    .quality-overlay {
-      position: absolute;
-      inset: 0;
+    .page {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding: 36px;
-      background: linear-gradient(to top, rgba(10,14,26,.9) 0%, transparent 60%);
+      position: relative;
     }
-    .quality-overlay h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 10px; }
-    .quality-overlay p { color: var(--text-muted); font-size: .95rem; max-width: 480px; line-height: 1.6; }
 
-    /* FINAL CTA */
-    .final-cta {
+    .banner {
+      width: 100%;
+      display: block;
+    }
+
+    .btn-wrap {
+      padding: 0 20px 32px;
+      background: #1a0000;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #e85d2a, #c93a10);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
       text-align: center;
-      background: linear-gradient(135deg, #0d1220 0%, #151d30 100%);
-      border-top: 1px solid rgba(201,168,76,.15);
-      padding: 64px 24px;
-    }
-    .final-cta h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 14px; }
-    .final-cta p { color: var(--text-muted); font-size: 1rem; margin-bottom: 32px; }
-
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: .8rem;
-      color: var(--text-muted);
-      border-top: 1px solid rgba(255,255,255,.05);
+      text-decoration: none;
+      padding: 18px 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 28px rgba(232,93,42,.5);
+      transition: transform .15s, box-shadow .15s;
+      letter-spacing: .3px;
     }
 
-    /* ANIMATIONS */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+    .btn:active {
+      transform: scale(.97);
+      box-shadow: 0 3px 14px rgba(232,93,42,.4);
     }
-    .fade-up { animation: fadeUp .65s ease both; }
-    .delay-1 { animation-delay: .1s; }
-    .delay-2 { animation-delay: .2s; }
-    .delay-3 { animation-delay: .3s; }
 
-    /* MOBILE */
-    @media (max-width: 640px) {
-      .blogger-block { grid-template-columns: 1fr; }
-      .results-grid { grid-template-columns: 1fr; }
-      .reviews-wrap { grid-template-columns: 1fr; }
-      .proof-bar { gap: 20px; }
-      .quality-overlay { padding: 20px; }
+    .btn span {
+      display: block;
+      font-size: .85rem;
+      font-weight: 500;
+      opacity: .85;
+      margin-top: 3px;
     }
   </style>
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav>
-    <div class="logo">2BK <span>Promotion</span></div>
-    <div class="nav-badge">🇺🇦 Україна · 7 років</div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-tag fade-up">Instagram Giveaway Конкурси</div>
-    <h1 class="fade-up delay-1">
-      Отримайте тисячі<br/>
-      <span class="accent">нових підписників</span><br/>
-      за 30 днів
-    </h1>
-    <p class="hero-sub fade-up delay-2">
-      Станьте спонсором конкурсу з блогером і отримайте цільову аудиторію, 
-      яка вже зацікавлена у вашому продукті. Без ботів — тільки реальні люди.
-    </p>
-    <div class="cta-group fade-up delay-3">
-      <a href="https://t.me/manager_2bk_bot" class="btn-primary" onclick="trackLead()">
-        Дізнатися вартість місця →
-      </a>
-      <a href="https://t.me/manager_2bk_bot" class="btn-ghost" onclick="trackLead()">
+  <div class="page">
+    <img src="images/banner.png" alt="Іменний конкурс з Олександрою Тарнавською" class="banner" />
+    <div class="btn-wrap">
+      <a href="https://t.me/manager_2bk_bot" class="btn" onclick="fbq('track','Lead')">
         Написати в Telegram
+        <span>та забронювати місце за найнижчою ціною</span>
       </a>
     </div>
-  </section>
-
-  <!-- PROOF BAR -->
-  <div class="proof-bar">
-    <div class="proof-item">
-      <span class="proof-num">37 700+</span>
-      <span class="proof-label">клієнтів обрали нас</span>
-    </div>
-    <div class="proof-item">
-      <span class="proof-num">475</span>
-      <span class="proof-label">іменних конкурсів</span>
-    </div>
-    <div class="proof-item">
-      <span class="proof-num">40 000+</span>
-      <span class="proof-label">підписників за конкурс</span>
-    </div>
-    <div class="proof-item">
-      <span class="proof-num">7</span>
-      <span class="proof-label">конкурсів на місяць</span>
-    </div>
   </div>
-
-  <!-- BLOGGER -->
-  <section class="section">
-    <h2 class="section-title">Наступний конкурс з <span>Олександрою Тарнавською</span></h2>
-    <div class="blogger-block">
-      <img src="images/blogger.jpg" alt="Олександра Тарнавська" class="blogger-img" />
-      <div class="blogger-info">
-        <h3>Іменний конкурс<br/><span>1,6 млн аудиторії</span></h3>
-        <p style="color: var(--text-muted); font-size: .95rem; margin-bottom: 8px;">
-          Підписники Олександри — активна, жива, україномовна аудиторія з високим рівнем залученості.
-        </p>
-        <div class="blogger-stats">
-          <div class="bstat">
-            <span class="bstat-num">+40 000</span>
-            <span class="bstat-label">нових підписників спонсорам за один конкурс</span>
-          </div>
-          <div class="bstat">
-            <span class="bstat-num">82,4 млн</span>
-            <span class="bstat-label">переглядів у акаунті</span>
-          </div>
-          <div class="bstat">
-            <span class="bstat-num">1,08 млн</span>
-            <span class="bstat-label">охоплених облікових записів</span>
-          </div>
-          <div class="bstat">
-            <span class="bstat-num">86,7%</span>
-            <span class="bstat-label">переглядів від живих читачів</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTS BEFORE/AFTER -->
-  <section class="section">
-    <h2 class="section-title">Результати партнерів <span>до / після</span></h2>
-    <div class="results-grid">
-      <img src="images/results.jpg" alt="Результати до і після конкурсу" class="result-img" />
-      <div style="display:flex; flex-direction:column; gap:14px; justify-content:center;">
-        <div class="card">
-          <span class="card-icon">📊</span>
-          <h3>Від 50 000 до 73 000 підписників</h3>
-          <p>Реальні кейси партнерів — акаунти з кількох сотень читачів виросли до десятків тисяч після одного конкурсу.</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">🎯</span>
-          <h3>Тільки цільова аудиторія</h3>
-          <p>Люди підписуються самі, бо хочуть виграти приз. Це найвища мотивація — вони вже зацікавлені у вашій ніші.</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">🔥</span>
-          <h3>Активність залишається після конкурсу</h3>
-          <p>Стимулюємо учасників переглядати пости, сторіс і взаємодіяти з контентом — не просто підписатись.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUALITY BANNER -->
-  <div class="section" style="padding-bottom: 0;">
-    <div class="quality-banner">
-      <img src="images/quality.jpg" alt="Якість результату" />
-      <div class="quality-overlay">
-        <h2>Беремо не кількістю — а якістю результату</h2>
-        <p>Працюємо на довгостроковий ріст, а не просто цифри. Живі підписники, охоплення та ріст профілю без "мертвої" аудиторії.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- BENEFITS -->
-  <section class="section" style="padding-top: 72px;">
-    <h2 class="section-title">Чому спонсори обирають нас</h2>
-    <div class="cards">
-      <div class="card">
-        <span class="card-icon">💪</span>
-        <h3>Фінансова гарантія</h3>
-        <p>Якщо ціль по приходу аудиторії не досягнута — повертаємо гроші. За 475 конкурсів завжди виконували гарантію.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">⚡</span>
-        <h3>Швидкий старт</h3>
-        <p>Від заявки до старту конкурсу — 3–5 днів. Проводимо 3 конкурси на місяць.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">💰</span>
-        <h3>Вигідна ціна</h3>
-        <p>Спонсорське місце дешевше, ніж таргет на ту саму кількість підписників. З набагато кращим результатом.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">🏆</span>
-        <h3>7 років досвіду</h3>
-        <p>475 іменних конкурсів, 37 700+ клієнтів. Лідер ринку розіграшів в Україні.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">📈</span>
-        <h3>Ріст охоплень</h3>
-        <p>Алгоритм Instagram помічає різкий приріст і починає показувати ваш контент ширше.</p>
-      </div>
-      <div class="card">
-        <span class="card-icon">🤝</span>
-        <h3>Повний супровід</h3>
-        <p>Менеджер веде від вибору місця до фінального звіту. Ніяких питань без відповіді.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section class="section">
-    <h2 class="section-title">Відгуки <span>клієнтів</span></h2>
-    <div class="reviews-wrap">
-      <img src="images/reviews.jpg" alt="Відгуки клієнтів" class="review-img" />
-      <div class="review-cards">
-        <div class="review-card">
-          <blockquote>"Результат реально сильний — +40 000 підписників 🔥 Видно, що команда відповідально підходить до своєї роботи та доводить результат до кінця."</blockquote>
-          <span class="review-result">+40 000 підписників</span>
-        </div>
-        <div class="review-card">
-          <blockquote>"Приход аудиторії склав майже 42 000, що значно перевищило мої очікування. Після такого досвіду я без вагань оплатила участь у наступному розіграші."</blockquote>
-          <span class="review-result">+42 000 підписників</span>
-        </div>
-        <div class="review-card">
-          <blockquote>"Конкурс закінчився, а люди все одно залишились і дивляться та реагують на контент. Саме цього я і хотіла."</blockquote>
-          <span class="review-result">Жива аудиторія</span>
-        </div>
-        <div class="review-card">
-          <blockquote>"Конкурс організований на високому рівні. Результати сторіз і лайктаймів свідчать про якісний підхід. Дякую за можливість!"</blockquote>
-          <span class="review-result">Рекомендує ✓</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section">
-    <h2 class="section-title">Як це працює</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-text">
-          <h4>Обираєте місце</h4>
-          <p>Пишете нам у Telegram, менеджер підбирає конкурс під вашу нішу і аудиторію.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-text">
-          <h4>Блогер анонсує конкурс</h4>
-          <p>Підписники беруть участь у розіграші призу. Умова — підписатись на всіх спонсорів.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-text">
-          <h4>Ваш акаунт росте</h4>
-          <p>За 7–14 днів ви отримуєте тисячі нових живих підписників з України.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-text">
-          <h4>Отримуєте звіт</h4>
-          <p>Після конкурсу — повна статистика: кількість підписників, охоплення, результат.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="final-cta">
-    <h2>Старт іменного — вже скоро</h2>
-    <p>Місця обмежені. Напишіть зараз — дізнайтеся вартість і умови участі</p>
-    <div class="cta-group">
-      <a href="https://t.me/manager_2bk_bot" class="btn-primary" onclick="trackLead()">
-        Написати менеджеру в Telegram →
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    2BK Promotion © 2026 — лідер ринку Instagram-конкурсів в Україні
-  </footer>
-
-  <script>
-    function trackLead() {
-      if (typeof fbq !== 'undefined') fbq('track', 'Lead');
-    }
-  </script>
-
 </body>
 </html>
