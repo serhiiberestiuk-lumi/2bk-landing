@@ -78,7 +78,7 @@
   <div class="page">
     <img src="images/banner.png" alt="Іменний конкурс з Олександрою Тарнавською" class="banner" />
     <div class="btn-overlay">
-      <a href="https://t.me/manager_2bk_bot" class="btn" onclick="fbq('track','Lead')">
+      <a href="https://t.me/manager_2bk_bot" class="btn" onclick="if(!this.dataset.tracked){this.dataset.tracked='1';fbq('track','Lead',{},{eventID:'lead_'+Date.now()+'_'+Math.random().toString(36).substr(2,9)});}">
         Пишіть нам у Telegram
         <span>та бронюйте партнерство за найнижчою ціною вже зараз</span>
       </a>
